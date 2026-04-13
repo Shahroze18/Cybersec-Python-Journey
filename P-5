@@ -1,0 +1,13 @@
+# port_checker.py
+def check_port(port):
+    if port < 1024:
+        print(f"Port {port} → Well-known (system)")
+    elif port <= 49151:
+        print(f"Port {port} → Registered")
+    else:
+        print(f"Port {port} → Dynamic / ephemeral")
+
+# Test it with different ports
+check_port(80)
+check_port(8080)
+check_port(55000)

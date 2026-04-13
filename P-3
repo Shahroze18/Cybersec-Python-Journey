@@ -1,0 +1,8 @@
+# ports_list.py
+ports = [80, 443, 22, 21, 3389]
+
+print("Open ports:")
+for port in ports:
+    print(f"  Port {port}")
+
+print(f"\nTotal: {len(ports)} ports")

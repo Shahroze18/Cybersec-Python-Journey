@@ -1,0 +1,15 @@
+# protocols_dict.py
+protocols = {
+    "HTTP":  80,
+    "HTTPS": 443,
+    "SSH":   22,
+    "FTP":   21,
+    "RDP":   3389,
+}
+
+print("Protocol → Port")
+for name, port in protocols.items():
+    print(f"  {name:<8} → {port}")
+
+# Look up a single value
+print(f"\nHTTPS uses port {protocols['HTTPS']}")
